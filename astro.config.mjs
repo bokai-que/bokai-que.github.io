@@ -29,7 +29,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 export default defineConfig({
 	site: siteConfig.siteURL,
 
-	base: "my-repo",
+	base: "/",
 	//site: 'https://example.com',
 	//要配置 Astro 以在 GitHub Pages 上使用自定义域名，请将你的域名设置为 site 的值。不要为 base 设置值
 
