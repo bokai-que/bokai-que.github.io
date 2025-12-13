@@ -18,17 +18,20 @@ import { LinkPreset } from "./types/config";
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
-const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_TITLE = "阙博凯"; // 网站的主标题，显示在浏览器标签页和页面头部
+const SITE_SUBTITLE = "个人博客"; // 网站副标题，通常显示在主页横幅下方
+const SITE_SITEURL = "https://bokai-que.github.io/"; // 请替换为你的站点URL，必须以斜杠结尾
+const SITE_SITESTARTDATE = "2025-12-12"; // 站点开始运行日期，用于站点统计组件计算运行天数
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+
 export const siteConfig: SiteConfig = {
-	title: "阙博凯",
-	subtitle: "个人博客",
-	siteURL: "https://bokai-que.github.io", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-12-12", // 站点开始运行日期，用于站点统计组件计算运行天数
-
-	timeZone: SITE_TIMEZONE,
-
-	lang: SITE_LANG,
+	title: SITE_TITLE,// 网站主标题
+	subtitle: SITE_SUBTITLE,// 网站副标题
+	siteURL: SITE_SITEURL, // 网站URL
+	siteStartDate: SITE_SITESTARTDATE, // 网站启动日期，格式为 YYYY-MM-DD
+	timeZone: SITE_TIMEZONE, // 网站的时区设置，影响日期显示和时间计算
+	lang: SITE_LANG,// 网站的默认语言，影响日期格式、翻译等功能
 
 	themeColor: {
 		hue: 200, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
@@ -36,7 +39,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// 特色页面开关配置(关闭不在使用的页面有助于提升SEO,关闭后直接在顶部导航删除对应的页面就行)
-	featurePages: {
+	featurePages: { // 控制特色页面的启用状态(关闭后系统会返回404状态码)
 		anime: true, // 番剧页面开关
 		diary: true, // 日记页面开关
 		friends: true, // 友链页面开关
@@ -48,11 +51,11 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// 顶栏标题配置
-	navbarTitle: {
+	navbarTitle: {  // 控制顶栏标题的显示
 		// 顶栏标题文本
-		text: "阙博凯-个人博客",
+		text: SITE_TITLE + "-" + SITE_SUBTITLE,
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/home.png",
+		icon: "assets/home/home.png", // 图标建议尺寸：32x32 像素，格式为 PNG 或 WebP
 	},
 
 	bangumi: {
@@ -169,7 +172,7 @@ export const siteConfig: SiteConfig = {
 		enable: true, // 启用目录功能
 		mode: "sidebar", // 目录显示模式："float" 悬浮按钮模式，"sidebar" 侧边栏模式
 		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
-		useJapaneseBadge: true, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
+		useJapaneseBadge: false, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
 	},
 	showCoverInContent: true, // 在文章内容页显示文章封面
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
@@ -421,12 +424,12 @@ export const commentConfig: CommentConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题
-	content: "Welcome to my blog! This is a sample announcement.", // 公告内容
+	title: "公告", // 公告标题
+	content: "欢迎来到我的博客！", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
-		text: "Learn More", // 链接文本
+		text: "了解更多", // 链接文本
 		url: "/about/", // 链接 URL
 		external: false, // 内部链接
 	},
@@ -604,7 +607,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -640,17 +643,17 @@ export const pioConfig: import("./types/config").PioConfig = {
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to Mizuki Website!", // 欢迎词
+		welcome: "欢迎来到我的博客!", // 欢迎词
 		touch: [
-			"What are you doing?",
-			"Stop touching me!",
-			"HENTAI!",
-			"Don't bully me like that!",
+			"你在干什么？",
+			"别碰我！",
+			"变态！",
+			"别这样欺负我！",
 		], // 触摸提示
-		home: "Click here to go back to homepage!", // 首页提示
-		skin: ["Want to see my new outfit?", "The new outfit looks great~"], // 换装提示
-		close: "QWQ See you next time~", // 关闭提示
-		link: "https://github.com/matsuzaka-yuki/Mizuki", // 关于链接
+		home: "点击这里返回首页！", // 首页提示
+		skin: ["想看看我的新装扮吗？", "新装扮看起来很棒~"], // 换装提示
+		close: "QWQ 下次见~", // 关闭提示
+		link: "https://github.com/bokai-que", // 关于链接
 	},
 };
 

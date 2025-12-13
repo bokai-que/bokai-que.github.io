@@ -80,6 +80,7 @@ jobs:
         env:
            # 使用单引号来包裹变量值
            PUBLIC_EVM_WALLET_ADDRESS: '0x4bFc229A40d41698154336aFF864f61083E76659'
+           
   deploy:
     needs: build
     runs-on: ubuntu-latest
