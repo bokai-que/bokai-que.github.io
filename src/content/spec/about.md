@@ -1,49 +1,51 @@
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
+本网站使用**Astro**框架构建，使用 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 主题
 
 ::github{repo="matsuzaka-yuki/Mizuki"}
 
-## 🌟 Theme Features
+## 🌟 主题功能
 
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
+### 🎨 设计和用户体验
+- **现代优雅的设计** - 简洁、简约的界面，精美的排版
+- **完全响应e** - 针对从移动到桌面的所有设备进行了优化
+- **暗/亮模式** - 自动切换主题，过渡流畅
+- **漂亮的排版** - 使用JetBrains Mono字体增强可读性
+- **流畅的动画** - 流畅的页面过渡和交互元素
 
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
+### 🔍 内容和搜索
+- **高级搜索** - 由 [Pagefind](https://pagefind.app/) 提供技术支持，快速、准确的结果
+- **增强的Markdown** - 扩展语法，支持代码高亮显示和数学运算
+- **交互式目录** - 长文章自动滚动导航
+- **RSS订阅源生成** - 通过自动订阅源生成保持更新
+- **阅读时间估算** - 了解阅读文章需要多长时间
+- **帖子分类** - 用标签和类别组织内容
 
+### 📱 特殊页面
+- **动漫跟踪页面** - 通过评分跟踪您的动漫观看进度
+- **好友链接页面** - 展示带有精美卡片的好友网站
+- **日记/时刻页面** - 像社交媒体帖子一样分享生活时刻
+- **存档页面** - 所有帖子的有组织的时间线视图
+- **关于页面** - 可定制的个人介绍（此页面！）
 
+### 🛠 技术特性
+- **增强代码块** - 由 [Expressive Code](https://expressive-code.com/)提供支持
+- **数学支持** - 使用KaTeX对数学表达式进行LaTeX渲染
+- **图像优化** - 带延迟加载的PhotoSwipe图库
+- **SEO优化** - 内置站点地图和元标签，提高搜索可见性
+- **性能优化** - 通过缓存和优化实现快速加载
+- **评论系统就绪** - 对Twikoo评论的集成支持
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
-
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
-
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
-
+### 🎯 高级Markdown功能
+- **标注和警告** - 漂亮的信息框，带有 `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
+- **数学方程式** - 编写LaTeX数学 `$inline$` 和 `$$block$$` 语法
+- **GitHub卡片** - 将存储库卡片嵌入 `::github{repo="user/repo"}`
+- **语法高亮显示** - 用行号高亮显示高级代码
+- **复制代码按钮** - 简单的代码复制功能
+-**标注和警告**-漂亮的信息框，带有“>[！注意]”、“>[提示]”、”>[！警告]`
+-**数学方程式**-使用“$inline$”和“$$block$$”语法编写LaTeX数学
+-**GitHub卡片**-将存储库卡片嵌入`：：GitHub{repo=“user/repo”}`
+-**语法高亮显示**-用行号高亮显示高级代码
+-**复制代码按钮**-简单的代码复制功能
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+*内置于 ❤️ 使用Astro并受到现代网页设计原则的启发*
