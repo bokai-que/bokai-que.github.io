@@ -4,17 +4,17 @@ title: 博客文章中包含嵌入式视频 # 标题
 published: 2025-12-12 # 发布时间
 updated: 2025-11-14 #更新时间
 description: 这篇文章演示了如何在博客文章中包含嵌入式视频. # 描述
-encrypted: true # 加密
-pinned: true # 固定
+encrypted: false # 加密
+pinned: false # 固定
 password: "123456" # 密码
 alias: "加密示例" # 别名
 image: '' # 图片
 tags: [示例，视频] # 标签
 category: 示例 # 类别
 licenseName: "未经许可" #许可证名称
-author: emn178 #作者
+#author: emn178 #作者
 sourceLink: "https://github.com/emn178/markdown" # 源链接
-draft: true # 草稿
+draft: false # 草稿
 ---
 
 只需从Bilibili或其他平台复制嵌入代码，并将其粘贴到markdown文件中
