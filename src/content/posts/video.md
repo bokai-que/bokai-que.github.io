@@ -11,9 +11,9 @@ alias: "加密示例" # 别名
 image: '' # 图片
 tags: [示例，视频] # 标签
 category: 示例 # 类别
-licenseName: "未经许可" #许可证名称
-#author: emn178 #作者
-sourceLink: "https://github.com/emn178/markdown" # 源链接
+licenseName: "CC BY-NC-SA 4.0" # 许可证名称 不使用时默认为 CC BY-NC-SA 4.0
+#author: emn178 # 作者
+#sourceLink: "https://github.com/emn178/markdown" # 源链接
 draft: false # 草稿
 ---
 
