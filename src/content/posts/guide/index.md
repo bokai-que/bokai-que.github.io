@@ -2,7 +2,7 @@
 #  true false
 title: Mizuki的简单指南 # 标题
 published: 2025-12-12 # 发布日期
-updated: 2025-11-14 #更新日期
+updated: 2025-12-14 #更新日期
 description: 如何使用此博客模板. # 描述
 #encrypted: true # 加密
 #password: "123456" # 密码
@@ -20,8 +20,8 @@ draft: false # 草稿 如果这篇文章仍然是草稿，则不会显
 
 
 
-这个博客模板是用[Astro]构建的(https://astro.build/).对于本指南中未提及的内容，
-您可以在[Astro Docs]中找到答案(https://docs.astro.build/).
+这个博客模板是用[Astro](https://astro.build/)构建的。对于本指南中未提及的内容，
+您可以在[Astro Docs](https://docs.astro.build/)中找到答案。
 
 ## 文章属性
 
@@ -55,7 +55,7 @@ draft: false
 | `sourceLink`  | 文章内容的源链接或引用                                                                                                                                                          |
 | `draft`       | 如果这篇文章仍然是草稿，则不会显示。                                                                                                                                                    |
 
-## 邮寄文件放在哪里
+## 文件放在哪里
 
 
 

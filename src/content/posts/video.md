@@ -2,7 +2,7 @@
 #  true false
 title: 博客文章中包含嵌入式视频 # 标题
 published: 2025-12-12 # 发布日期
-updated: 2025-11-14 #更新日期
+updated: 2025-12-14 #更新日期
 description: 这篇文章演示了如何在博客文章中包含嵌入式视频. # 描述
 #encrypted: true # 加密
 #password: "123456" # 密码
@@ -26,6 +26,7 @@ title: 博客文章中包含嵌入式视频
 published: 2025-12-12
 // ...
 ---
+## Bilibili
 
 <iframe width="100%" height="468" src="//player.bilibili.com/player.html?bvid=BV1fK4y1s7Qf&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" &autoplay=0> </iframe>
 ```

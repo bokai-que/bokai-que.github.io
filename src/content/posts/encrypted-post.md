@@ -1,28 +1,36 @@
 ---
-title: Encrypted Post
-published: 2024-01-15
-description: This is an article for testing the page encryption feature
-encrypted: true
-pinned: true
-password: "123456"
-alias: "encrypted-example"
-tags: ["Test", "Encryption"]
-category: "Technology"
-draft: true
+#  true false
+title: 加密帖子 # 标题
+published: 2025-12-12T04:40:26.381Z # 发布日期
+updated: 2025-11-14 #更新日期
+description: 这是一篇测试页面加密功能的文章. # 描述
+encrypted: true # 加密
+password: "123456" # 密码
+alias: "加密示例" # 别名
+pinned: true # 置顶
+priority: 0 # 置顶优先级,数字越小优先级越高(0、1、2...)
+#image: ./cover.jpg # 封面图片路径。<br/>1。以“http://”或“https://”开头：使用网络图像<br/>2。以“/”开头：用于“public”目录中的图像<br/>3。没有前缀：相对于markdown文件
+tags: [“测试”，“加密”] # 标签
+category: 技术 # 类别
+#licenseName: "未经许可" # 许可证名称 不使用时默认为 CC BY-NC-SA 4.0
+#author: 原作者 # 作者 引用别人的文章时使用
+#sourceLink: "https://github.com/emn178/markdown" # 源链接 引用别人的文章时使用
+draft: false # 草稿 如果这篇文章仍然是草稿，则不会显
 ---
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+这个博客模板是用[Astro](https://astro.build/)构建的。对于本指南中未提及的内容，
+您可以在[Astro Docs](https://docs.astro.build/)中找到答案。
 
 ## Front-matter of Posts
 
 ```yaml
 ---
-title: My First Blog Post
+title: 我的第一篇博客文章
 published: 2023-09-09
-description: This is the first post of my new Astro blog.
+description: 这是我新的Astro博客的第一篇文章
 image: ./cover.jpg
 tags: [Foo, Bar]
-category: Front-end
+category: 前端
 draft: false
 ---
 ```
@@ -31,71 +39,71 @@ draft: false
 
 
 
-| Attribute     | Description                                                                                                                                                                                                 |
+| 属性     | 描述                                                                                                                                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `pinned`      | Whether this post is pinned to the top of the post list.                                                                                                                                                   |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `alias`   | alias for the post. The post will be accessible at `/posts/{alias}/`. Example: `my-special-article` (will be available at `/posts/my-special-article/`)                                   |
-| `licenseName` | The license name for the post content.                                                                                                                                                                      |
-| `author`      | The author of the post.                                                                                                                                                                                     |
-| `sourceLink`  | The source link or reference for the post content.                                                                                                                                                          |
-| `draft`       | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
+| `title`       | 文章的标题                                                                                                                                                                                      |
+| `published`   | 文章发布的日期                                                                                                                                                                            |
+| `pinned`      | 此文章是否固定在文章列表的顶部                                                                                                                                                   |
+| `priority`    | 固定文章的优先级。较小的值意味着较高的优先级（0、1、2…）                                                                                                                          |
+| `description` | 对文章的简短描述。显示在索引页上                                                                                                                                                   |
+| `image`       | 文章的封面图片路径。<br/>1。以“http://”或“https://”开头：使用网络图像<br/>2。以“/”开头：用于“public”目录中的图像<br/>3。没有前缀：相对于markdown文件 |
+| `tags`        | 文章的标签                                                                                                                                                                                       |
+| `category`    | 文章的类别                                                                                                                                                                                   |
+| `licenseName` | 文章内容的许可证名称                                                                                                                                                                      |
+| `author`      | 文章的作者                                                                                                                                                                                     |
+| `sourceLink`  | 文章内容的源链接或引用                                                                                                                                                          |
+| `draft`       | 如果这篇文章仍然是草稿，则不会显示。                                                                                                                                          |
 
-## Where to Place the Post Files
+## 文件放在哪里
 
 
 
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
+您的文章文件应该放在`src/content/posts/`目录中。您还可以创建子目录来更好地组织您的文章
 
 ```
 src/content/posts/
 ├── post-1.md
-└── post-2/
+└── guide/
     ├── cover.png
     └── index.md
 ```
 
-## Posts alias
+## 文章别名
 
-You can set a alias for any post by adding the `alias` field to the front-matter:
+您可以通过在前端添加“alias”字段来为任何帖子设置别名：
 
 ```yaml
 ---
-title: My Special Article
+title: 我的特别文章
 published: 2024-01-15
 alias: "my-special-article"
-tags: ["Example"]
-category: "Technology"
+tags: ["示例"]
+category: "技术"
 ---
 ```
 
-When a alias is set:
-- The post will be accessible at the custom URL (e.g., `/posts/my-special-article/`)
-- The default `/posts/{slug}/` URL will still work
-- RSS/Atom feeds will use the custom alias
-- All internal links will automatically use the custom alias
+设置别名时:
+- 可以通过自定义URL访问该帖子（例如，`/posts/my-special-article/`）
+- 默认的`/posts/{slug}/` URL仍然有效
+- RSS/Atom提要将使用自定义别名
+- 所有内部链接都将自动使用自定义别名
 
-**Important Notes:**
-- Alias should NOT include `/posts/` prefix (it will be added automatically)
-- Avoid special characters and spaces in alias
-- Use lowercase letters and hyphens for best SEO practices
-- Make sure alias are unique across all posts
-- Don't include leading or trailing slashes
+**重要提示:**
+- 别名不应包含`/posts/`前缀（它将自动添加）
+- 避免别名中的特殊字符和空格
+- 使用小写字母和连字符进行最佳SEO实践
+- 确保别名在所有帖子中都是唯一的
+- 不包括前导或尾随斜线
 
 
-## How It Works
+## 它是如何工作的
 
 ```mermaid
 graph LR
-    A[User Password] --> B[bcrypt Hash]
-    B --> C[Password Hash]
-    C --> D[Extract First 32 Characters]
-    D --> E[Encryption Key]
-    E --> F[AES Encryption]
-    F --> G[Encrypted Content]
+    A[用户密码] --> B[bcrypt 哈希]
+    B --> C[密码哈希]
+    C --> D[提取前32个字符]
+    D --> E[加密密钥]
+    E --> F[AES加密]
+    F --> G[加密内容]
 ```
