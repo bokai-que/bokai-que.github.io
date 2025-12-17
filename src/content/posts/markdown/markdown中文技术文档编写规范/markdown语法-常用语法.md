@@ -3,7 +3,7 @@
 title: markdown语法-常用语法 # 文章标题（必需）
 published: 2025-12-17 # 发布日期（必需）
 updated: 2025-12-17 #更新日期
-date: 2025-12-17T21:12:26.381Z #文章创建日期
+date: 2025-12-17 #文章创建日期
 description: markdown中文技术文档编写规范. # 文章描述，用于 SEO 和预览
 #encrypted: true # 加密
 #password: "123456" # 密码
@@ -11,7 +11,7 @@ description: markdown中文技术文档编写规范. # 文章描述，用于 SEO
 #pinned: true # 设置为 true 将文章置顶，普通文章（默认为false）
 #priority: 0 # 置顶优先级,数字越小优先级越高(0、1、2...)
 #image: ./cover.jpg # 封面图片路径（相对于文章文件）<br/>1。以“http://”或“https://”开头：使用网络图像<br/>2。以“/”开头：用于“public”目录中的图像<br/>3。没有前缀：相对于markdown文件
-tags: [markdown，技术文档，语法] # 标签数组，用于分类
+tags: [markdown,技术文档,语法] # 标签数组，用于分类
 category: markdown # 类别 文章分类
 #licenseName: "未经许可" # 许可证名称 不使用时默认为 CC BY-NC-SA 4.0
 #author: 原作者 # 作者 引用别人的文章时使用
@@ -31,48 +31,44 @@ Markdown 支援两种标题的语法，[Setext] [1] 和 [atx] [2] 形式。Setex
 
 Markdown:
 
-    A First Level Header
+    一级标题
     ====================
     
-    A Second Level Header
+    二级标题
     ---------------------
 
-    Now is the time for all good men to come to
-    the aid of their country. This is just a
-    regular paragraph.
+    现在是所有好人来帮助他们国家的时候了。  
+    这只是一个常规段落
 
-    The quick brown fox jumped over the lazy
-    dog's back.
+    敏捷的棕色狐狸跳过懒狗的背
     
-    ### Header 3
+    ### 标题 3
 
-    > This is a blockquote.
+    > 这是一个块引用
     > 
-    > This is the second paragraph in the blockquote.
+    > 这是第二个块引用
     >
-    > ## This is an H2 in a blockquote
+    > ## 这是一个H2块引用
 
 输出：
 
-    <h1>A First Level Header</h1>
+    <h1>一级标题</h1>
     
-    <h2>A Second Level Header</h2>
+    <h2>二级标题</h2>
     
-    <p>Now is the time for all good men to come to
-    the aid of their country. This is just a
-    regular paragraph.</p>
+    <p>现在是所有好人来帮助他们国家的时候了。  
+    这只是一个常规段落</p>
     
-    <p>The quick brown fox jumped over the lazy
-    dog's back.</p>
+    <p>敏捷的棕色狐狸跳过懒狗的背</p>
     
-    <h3>Header 3</h3>
+    <h3>标题</h3>
     
     <blockquote>
-        <p>This is a blockquote.</p>
+        <p>这是一个块引用</p>
         
-        <p>This is the second paragraph in the blockquote.</p>
+        <p>这是第二个块引用</p>
         
-        <h2>This is an H2 in a blockquote</h2>
+        <h2>这是一个H2块引用</h2>
     </blockquote>
 
 
